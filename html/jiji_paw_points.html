@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jiji's Beans</title>
+    <link type="text/css" rel="stylesheet" href="../css/cafe.css">
+</head>
+<body>
+    <header>
+        <a href="jiji_home.html"><img src="../images/logo.png" alt="Jiji's Beans"/></a>
+		<nav>
+			<ul>
+				<li><a href="jiji_home.html">Home</a></li>
+				<li><a href="jiji_order.html">Order</a></li>
+				<li><a href="jiji_about.html">About</a></li>
+				<li><a href="jiji_paw_points.html">Paw Points</a></li>
+				<li><a href="jiji_FAQ.html">FAQ</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main>
+        <section id="first_half">
+            <h2>What are Paw Points?</h2>
+            <p>
+                Paw Points are a rewards system used to provide our members with special deals. With just an email, name, and 
+                phone number, members can:
+                <div id="paw_point_list">
+                    <ul>
+                        <li class="paw_point_bullet">Earn 25 <strong>Paw Points</strong> with every $5 spent</li>
+                        <li class="paw_point_bullet">Receive special offers on drinks and food through email or phone</li>
+                        <li class="paw_point_bullet">Get the latest updates on our feline residents</li>
+                        <li class="paw_point_bullet">Be the first to know about special events and fundraisers</li>
+                    </ul>
+                </div>
+            </p>
+        </section>
+        
+        
+        <h2 id="form_heading">Sign Up for Rewards</h2>
+        <div id="form">
+            <div class="paw_point_label">
+                <label for="first_name">First Name:</label>
+                <input type="text" name="first_name" id="first_name">
+            </div>
+
+            <div class="paw_point_label">
+                <label for="last_name">Last Name:</label>
+                <input type="text" name="last_name" id="last_name">
+            </div>
+
+            <div class="paw_point_label">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div class="paw_point_label">
+                <label for="phone">Phone Number:</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+
+            <div>
+                <label></label>
+                <input type="button" id="sign_up" value="Sign Up">
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="../javascript/paw_point_form.js"></script>
+</body>
+</html>

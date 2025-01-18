@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jiji's Beans</title>
+    <link type="text/css" rel="stylesheet" href="../css/cafe.css">
+</head>
+<body>
+    <header>
+        <a href="jiji_home.html"><img src="../images/logo.png" alt="Jiji's Beans"/></a>
+
+		<nav>
+			<ul>
+				<li><a href="jiji_home.html">Home</a></li>
+				<li><a href="jiji_order.html">Order</a></li>
+				<li><a href="jiji_about.html">About</a></li>
+				<li><a href="jiji_paw_points.html">Paw Points</a></li>
+				<li><a href="jiji_FAQ.html">FAQ</a></li>
+			</ul>
+		</nav>
+    </header>
+    <main>
+        <section id="first_half">
+            <h2>About Us</h2>
+            <p>
+                We first opened our doors in 2021 with the goal of creating a space where cat and coffee lovers could
+                relax and unite under one roof, while also providing an opportunity to find local cats their forever homes!
+            </p>
+            <p>
+                Since then, we have sent over 50 cats to a loving home, and have provided food, litter, and medical supplies
+                to shelters in our area from donations from people just like you.
+            </p>
+            <p>
+                20% of profits made from selling food and drink, and 100% of donations go towards helping shelter animals and our 
+                residents. We regularly host fundraisers and adoption events in hopes of helping our fuzzy friends in need! We encourage 
+                everyone to attend these events and support our community.
+            </p>
+        </section>
+       
+        <h2 id="second_heading">Meet the Residents</h2>
+        <p>
+            All residents are excited to meet you! Click on an image to find out more about each cat.
+        </p>
+        <div class="container">
+            <!--creating modal image-->
+            <div id="cat_modal" class="cat_modal_gallery">
+                <span class="cat_modal_close">X</span> <!--close button for the modal image-->
+                <img class="cat_modal_image" id="img1"> <!--image for the modal-->
+                <div id="cat_modal_caption"></div>      <!--caption for the modal-->
+            </div>
+
+            <!--grid for the images-->
+            <ul class="gallery">
+                <li><img class="cat_resident_image" src="../images/cat_colby.jpg" 
+                    alt="Colby - 1 yr old male. A timid guy, but he really shines
+                    when a laser toy comes into play!"></li>
+                <li><img class="cat_resident_image" src="../images/cat_lisa.jpg" 
+                    alt="Lisa - 3 yr old female. She makes for the perfect nap
+                    buddy! She loves to sleep and relax while you enjoy a 
+                    warm drink."></li>
+                <li><img class="cat_resident_image" src="../images/cat_earl_grey.jpg" 
+                    alt="Earl Grey - 3 yr old male. He's the resident jokester.
+                    He is always up to mischief, but loves a nice scratch under
+                    the chin."></li>
+                <li><img class="cat_resident_image" src="../images/cat_stevie.jpg" 
+                    alt="Stevie - 2 yr old male. The most friendly of our 
+                    feline residents, Stevie knows no stranger. He never gets
+                    tired of a good cuddle!"></li>
+                <li><img class="cat_resident_image" src="../images/cat_mr_heart.jpg" 
+                    alt="Mr. Heart - 4 yr old male. A bit of a loner when it comes
+                    to the other cats, but he does well around women! Mr. Heart
+                    tends to avoid men and children."></li>
+                <li><img class="cat_resident_image" src="../images/cat_tora.jpg" 
+                    alt="Tora - 1 yr old female. Young and full of spunk, this cat
+                    is always ready to play! Her favorite is the feather toy."></li>
+            </ul>
+        </div>
+    </main>
+    <script src="../javascript/modal_images.js"></script>
+</body>
+</html>

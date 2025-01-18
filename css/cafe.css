@@ -1,0 +1,282 @@
+/*Main Body and HTML Styles*/
+html /*can change the background pattern or color without affecting the main body*/
+{
+	background: rgb(38, 60, 30);
+}
+body 
+{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: rgb(213, 193, 179);
+    width: 465px;
+	height: auto;
+    margin: 0 auto;
+    border: 2px solid rgb(170, 85, 45);
+    border-radius: 15px;
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.4);
+    padding: 0 2em 1em;
+}
+
+/*Header Styles*/
+header 
+{
+	text-align: center;
+	border-bottom: 3px solid rgb(170, 85, 45);
+}
+header img /*used to edit the logo on the website*/
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	height: auto;
+}
+/*Navigational Styles*/
+nav ul 
+{
+	list-style-type: none;
+	padding: 5px;
+	text-align: center;
+}
+nav li a 
+{ 
+	padding: 7px 12px;
+	display: inline-block;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: black;
+}
+nav li a:hover
+{
+	color: white;
+	background-color: rgb(170, 85, 45);
+}
+
+/*Heading Styles*/
+h1 
+{ 
+    font-size: 150%;
+    margin-bottom: .5em;
+}
+h2 
+{
+	font-size: 140%;
+	font-weight: 500;
+	margin-top: 0;
+	margin-bottom: .2em;
+}
+#second_heading
+{
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 20px;
+	border-top: 3px solid rgb(170, 85, 45);
+}
+select 
+{
+	width: 305px;
+}
+
+/*Section Styles*/
+#first_half h2 
+{
+	padding-top: 1em;
+
+}
+#first_half p 
+{
+	margin-top: 0;
+	margin-bottom: .7em;
+}
+
+/*List Styles*/
+ul 
+{
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+ul li 
+{
+	display: inline;
+    padding: 5px 0 5px 0;
+}
+.paw_point_bullet
+{
+	display: list-item;
+	list-style-type: circle;
+	padding-left: 25px;
+	list-style-position: inside;
+}
+
+/*Misc Styles*/
+#total 
+{
+	margin-top: .5em;
+	margin-bottom: .7em;
+}
+input 
+{
+    width: 150px;
+    margin-right: 5px;
+}
+#buttons 
+{
+	margin-top: 0;
+}
+
+/*Slides Styles*/
+#slide
+{
+	width: 300px;
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+#slides img
+{
+	width: 300px;
+	text-align: center;
+	margin: auto;
+	margin-top: 35px;
+	display: none;
+}
+#caption
+{
+	text-align: center;
+	font-size: 2em;
+}
+
+
+/*Form Styles*/
+#form_heading
+{
+	margin-top: 40px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+#form
+{
+	background-color: rgba(170, 85, 45, 0.3);
+	margin: 5px;
+	padding: 20px;
+	border: 2px solid rgb(170, 85, 45);
+}
+label
+{
+	display: inline-block;
+	width: 8em;
+	text-align: right;
+}
+input
+{
+	margin-left: 0.7em;
+	margin-right: 0.5em;
+}
+.paw_point_label
+{
+	margin-bottom: 1em;
+}
+#sign_up
+{
+	width: 6em;
+	height: 2em;
+}
+
+/*FAQs Styles*/
+h3
+{
+	background: url(../images/plus.png) no-repeat left center;
+	background-size: 30px;
+	padding: .25em 0 .25em 40px;
+}
+h3.minus
+{
+	background: url(../images/minus.png) no-repeat left center;
+	background-size: 30px;
+}
+.h3_faq
+{
+	text-decoration: none;
+	color: black;
+}
+.h3_faq:hover
+{
+	color: rgb(170, 85, 45);
+}
+.faq_div
+{
+	display: none;
+}
+
+/*Modal Gallery Styles*/
+.cat_resident_image /*used to trigger the modal and style the image*/
+{
+	cursor: pointer;
+	transition: 0.4s;
+	width: 150px;
+}
+.cat_resident_image:hover 
+{
+	opacity: 0.6;
+}
+.cat_modal_gallery /*the modal's background*/
+{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.cat_modal_image /*image for the modal box*/
+{
+	padding-top: 80px;
+	margin: auto;
+	display: block;
+	width: 30%;
+}
+#cat_modal_caption /*caption for the modal box*/
+{
+	margin: auto;
+	display: block;
+	width: 30%;
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+	height: 150px;
+}
+.cat_modal_gallery, #cat_modal_caption /*adding animation*/
+{
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.5s;
+	animation-name: zoom;
+	animation-duration: 0.5s;
+}
+@-webkit-keyframes zoom 
+{
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+}
+@keyframes zoom 
+{
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
+}
+.cat_modal_close /*close button style*/
+{
+	position: absolute;
+	top: 75px;
+	right: 80px;
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+	transition: 0.4s;
+}
+.cat_modal_close:hover, .cat_modal_close:focus
+{
+	color:  rgb(219, 99, 113);
+}
